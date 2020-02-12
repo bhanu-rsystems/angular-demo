@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { policies } from '../../policies';
 
 @Component({
   selector: 'app-policy-list',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./policy-list.component.css']
 })
 export class PolicyListComponent implements OnInit {
+	policies = policies;
+  
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }
